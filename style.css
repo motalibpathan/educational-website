@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Rubik:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  background-color: #fbfaf5;
+}
+
+.banner {
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.banner .left {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.banner .left .title {
+  font-size: 100px;
+  font-family: "Domine", serif;
+  font-weight: bold;
+  color: #e85a4f;
+}
+.banner .left .subtitle {
+  font-size: 55px;
+  font-family: "Domine", serif;
+  font-weight: bold;
+}
+
+.banner .left .description {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+.banner .left .count {
+  margin-top: 250px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.banner .left .count .item {
+  position: relative;
+}
+
+.banner .left .count .item .countBox {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 45px;
+  height: 30px;
+  background: #eae7dc;
+  z-index: 1;
+}
+.banner .left .count .item h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e85a4f;
+  position: relative;
+  z-index: 10;
+}
+.banner .left .count .item p {
+  font-size: 16px;
+  color: black;
+}
+
+.banner .search {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  display: flex;
+  align-items: center;
+  background: #fbfaf5;
+  border: 1px solid #6b6a65;
+  box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  width: 600px;
+  height: 100px;
+  padding: 0 20px;
+  z-index: 30;
+}
+.banner .search .btn {
+  margin-left: auto;
+}
+
+.btn {
+  width: 187px;
+  height: 60px;
+  background: #e85a4f;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.banner .searchInput {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.banner .right {
+  width: 50%;
+  position: relative;
+}
+
+/* .banner .right .backgroundImage {
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/banner.png);
+  background-repeat: no-repeat;
+} */
+.banner .right .card {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  width: 280px;
+  height: 247px;
+  background-color: #fbfaf5;
+  padding: 20px;
+  background: #fbfaf5;
+  border: 2px solid rgba(107, 106, 101, 0.2);
+  box-shadow: 0px 8px 15px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.banner .right .card h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #e85a4f;
+  margin-bottom: 5px;
+}
+.banner .right .card p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.categoryFull,
+.processFull {
+  background-color: #eae7dc;
+}
+
+.category {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categoryLeft {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryLeft .catTitle {
+  font-weight: 700;
+  font-size: 40px;
+  color: #e85a4f;
+  width: 50%;
+}
+
+.categoryLeft > p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  width: 70%;
+}
+
+.exploreBtn {
+  width: 187px;
+  height: 60px;
+  background: #e85a4f;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.categoryRight .categoryItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.categoryRight .categoryItems .item {
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  gap: 40px;
+  padding-top: 10px;
+}
+
+.popularFull {
+  width: 100%;
+  background-color: #fbfaf5;
+  padding: 40px 0;
+}
+
+.popularTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.popularTitle > h1 {
+  font-size: 40px;
+  color: #e85a4f;
+  font-weight: bold;
+}
+
+.leftBtn {
+  border: none;
+  background: transparent;
+  border: 1px solid lightgray;
+  padding: 5px 20px;
+  color: #e85a4f;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.rightBtn {
+  border: none;
+  background: lightgray;
+  border: 1px solid lightgray;
+  padding: 5px 20px;
+  color: #e85a4f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.courseCard {
+  width: 360px;
+  height: 523px;
+  background: #fbfaf5;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 22px;
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cardContainer .cardTop {
+  position: relative;
+}
+
+.cardContainer .cardTop .courseImg {
+  width: 100%;
+}
+
+.courseCard .avatar {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+.cardContainer .courseTitle {
+  font-size: 18px;
+  padding: 0 10px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.cardContainer .divider {
+  width: 95%;
+  margin: 0 auto;
+  border-top: 1px solid lightgray;
+}
+.cardFooter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.cardFooter .cardIcon {
+  padding: 0 6px;
+  padding-top: 6px;
+  margin: 0 10px;
+  border: 1px solid #ffd5d2;
+  border-radius: 5px;
+}
+.cardFooter .cardCount {
+  font-size: 16px;
+  font-weight: 600;
+}
+.cardFooter .courseRating {
+  display: inline-block;
+  background-color: #e85a4f;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.process {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.processLeft {
+  width: 50%;
+}
+
+.processRightContent {
+  background: url("/images/element.png");
+  background-repeat: no-repeat;
+}
+
+.processRight {
+  width: 50%;
+}
+
+.processTitle {
+  font-size: 40px;
+  color: #e85a4f;
+  font-weight: bold;
+}
+
+.processItemTitle {
+  font-size: 22px;
+  color: #6b6a65;
+}
+.processItemDesc {
+  font-size: 18px;
+}
+.processItemBox {
+  width: 70px;
+  height: 56px;
+  background: #fbfaf5;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.processItemBox > span {
+  color: #e85a4f;
+  font-weight: 700;
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.featuredFull {
+  background-color: #fbfaf5;
+}
+
+.featured {
+  padding: 100px 20px;
+  display: flex;
+}
+
+.featureCourseCard {
+  background: #fbfaf5;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 22px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.trendingFull {
+  background-color: #eae7dc;
+}
+
+.trending {
+  padding: 100px 20px;
+  background-color: #eae7dc;
+}
+
+.trendingCard {
+  width: 270px;
+  padding-bottom: 15px;
+  background-color: white !important;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.upcomingFull,
+.companyFull {
+  background-color: #fbfaf5;
+}
+
+.upcoming {
+  padding: 100px 20px;
+}
+
+.view-all-btn {
+  padding: 5px 10px;
+  background-color: gray;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.eventCard {
+  width: 570px;
+  background: #fbfaf5;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.join-now-btn {
+  background: #e85a4f;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+}
+
+.feedbackFull,
+.footerFull {
+  background-color: #eae7dc;
+}
+
+.feedback,
+.enrollmentInfo,
+.faq,
+.companies,
+.footer {
+  padding: 100px 20px;
+}
+
+.enrollment {
+  position: relative;
+}
+
+.enrollmentImg {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 400px;
+}
+
+.faqItem {
+  width: 680px;
+  height: 60px;
+  background: #fbfaf5;
+  border: 1px solid rgba(107, 106, 101, 0.2);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.faqItem > div {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.footerLogo {
+  width: 280px;
+}
+
+.footerLinks {
+}
+
+.footerLinks > li {
+  list-style-type: none;
+  padding: 15px 0px;
+}
+
+.footerLinks > li a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.emailBox {
+  border: 1px solid rgba(107, 106, 101, 0.2);
+  padding: 5px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.emailInput {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: transparent;
+}
+
+.footer {
+}
