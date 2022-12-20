@@ -210,6 +210,8 @@ body {
   font-size: 20px;
 }
 
+/* category section css start */
+
 .categoryFull,
 .processFull {
   background-color: #eae7dc;
@@ -269,6 +271,8 @@ body {
   gap: 40px;
   padding-top: 10px;
 }
+
+/* popular section start */
 
 .popularFull {
   width: 100%;
@@ -376,6 +380,8 @@ body {
   margin-left: 10px;
 }
 
+/* process start */
+
 .process {
   padding: 100px 0;
   display: flex;
@@ -441,6 +447,7 @@ body {
   border-radius: 22px;
   margin-bottom: 30px;
   padding: 10px;
+  display: flex;
 }
 
 .trendingFull {
@@ -588,4 +595,173 @@ body {
 }
 
 .footer {
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .banner .left,
+  .banner .right,
+  .processRight,
+  .processLeft {
+    width: 100%;
+  }
+  .navbar {
+    /* display: none; */
+    position: static;
+    background-color: #fbfaf5;
+  }
+
+  .searchBox {
+    margin-top: 10px;
+  }
+
+  .navbarTop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner,
+  .category {
+    flex-wrap: wrap;
+  }
+  .banner .left .title {
+    font-size: 54px;
+  }
+  .banner .left .subtitle {
+    font-size: 34px;
+  }
+  .banner .search {
+    position: static;
+    width: 100%;
+    height: 100px;
+  }
+
+  .banner .search {
+    position: static;
+    width: 100%;
+    height: 70px;
+  }
+
+  .banner .search .btn {
+    width: 100px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .banner .left .count {
+    margin-top: 50px;
+  }
+
+  .categoryLeft {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .categoryLeft .catTitle,
+  .categoryLeft > p {
+    width: 100%;
+  }
+  .categoryLeft > p {
+    margin-bottom: 20px;
+  }
+
+  .categoryRight .categoryItems {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .popularTitle > h1 {
+    font-size: 25px;
+  }
+
+  .cardContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  /* process start */
+  .process {
+    flex-wrap: wrap;
+  }
+
+  .processRightContent {
+    width: 100%;
+  }
+  .processRightContent > img {
+    width: 100%;
+  }
+
+  .processTitle {
+    font-size: 30px;
+  }
+
+  .processRightContent {
+    background: transparent;
+  }
+
+  .processRight > div {
+    display: block !important;
+    padding-left: 10px;
+  }
+
+  .processRight .btn {
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+  }
+
+  .processStep {
+    width: 100% !important;
+    margin-left: 5px !important;
+  }
+
+  .processItemBox {
+    width: 60px;
+    height: 46px;
+  }
+  .processItemBox > span {
+    font-size: 16px;
+  }
+
+  .featured {
+    flex-wrap: wrap;
+  }
+
+  .featureCourseCard {
+    display: block;
+    width: 100%;
+  }
+
+  .trendingCard {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .trendingCard > img {
+    width: 100%;
+  }
+
+  .enrollmentImg {
+    display: none;
+  }
+
+  .faq {
+    width: 100%;
+  }
+
+  .faqItem {
+    width: 100%;
+  }
+
+  .footerLinks > li a {
+    font-size: 14px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
