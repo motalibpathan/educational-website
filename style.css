@@ -13,6 +13,48 @@ body {
   background-color: #fbfaf5;
 }
 
+.navContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  color: #6b6a65;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.loginBtn {
+  color: #e85a4f;
+}
+
+.signUpBtn {
+  padding: 5px 10px;
+  background-color: #e85a4f;
+  border-radius: 5px;
+}
+
+.signUpBtn a {
+  color: white !important;
+}
+
 .banner {
   width: 100%;
   height: 1024px;
