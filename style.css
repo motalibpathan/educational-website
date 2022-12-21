@@ -44,6 +44,10 @@ body {
   text-decoration: none;
 }
 
+.navbar ul li a:hover {
+  color: #e85a4f;
+}
+
 .loginBtn {
   color: #e85a4f;
 }
@@ -51,11 +55,22 @@ body {
 .signUpBtn {
   padding: 5px 10px;
   background-color: #e85a4f;
+  border: 1px solid #e85a4f;
+  border-radius: 5px;
+}
+
+.signUpBtn:hover {
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid #e85a4f;
   border-radius: 5px;
 }
 
 .signUpBtn a {
   color: white !important;
+}
+.signUpBtn a:hover {
+  color: #e85a4f !important;
 }
 
 .searchBox {
@@ -166,6 +181,11 @@ body {
   font-weight: 500;
   font-size: 22px;
 }
+.btn:hover {
+  background: transparent;
+  border: 1px solid #e85a4f;
+  color: #e85a4f;
+}
 
 .banner .searchInput {
   padding: 10px;
@@ -247,11 +267,18 @@ body {
   width: 187px;
   height: 60px;
   background: #e85a4f;
+  border: 1px solid #e85a4f;
   border-radius: 5px;
   border: none;
   color: white;
   font-weight: 500;
   font-size: 20px;
+  cursor: pointer;
+}
+.exploreBtn:hover {
+  background: transparent;
+  color: #e85a4f;
+  border: 1px solid #e85a4f;
 }
 
 .categoryRight .categoryItems {
@@ -393,13 +420,54 @@ body {
   width: 50%;
 }
 
-.processRightContent {
-  background: url("/images/element.png");
-  background-repeat: no-repeat;
-}
-
 .processRight {
   width: 50%;
+}
+
+.processRightContent {
+  position: relative;
+}
+
+.processRightBg {
+  /* background: url("/images/element.png");
+  background-repeat: no-repeat; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.processRightImg {
+  position: relative;
+  z-index: 10;
+}
+
+.processRightBg {
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotate;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
 }
 
 .processTitle {
@@ -439,6 +507,10 @@ body {
 .featured {
   padding: 100px 20px;
   display: flex;
+}
+
+.featureSelect {
+  width: 40%;
 }
 
 .featureCourseCard {
@@ -501,9 +573,15 @@ body {
 .view-all-btn {
   padding: 5px 10px;
   background-color: gray;
+  border: 1px solid gray;
   border: none;
   color: white;
   border-radius: 5px;
+}
+.view-all-btn:hover {
+  background-color: white;
+  border: 1px solid gray;
+  color: gray;
 }
 
 .eventCard {
@@ -515,10 +593,16 @@ body {
 
 .join-now-btn {
   background: #e85a4f;
+  border: 1px solid #e85a4f;
   border-radius: 3px;
   color: #fff;
   border: none;
   padding: 5px 10px;
+}
+.join-now-btn:hover {
+  background: transparent;
+  border: 1px solid #e85a4f;
+  color: #e85a4f;
 }
 
 .feedbackFull,
@@ -670,8 +754,16 @@ body {
     margin-bottom: 20px;
   }
 
+  .categoryRight {
+    width: 100%;
+  }
+
   .categoryRight .categoryItems {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .categoryRight .categoryItems .item {
+    width: 100%;
+    height: 100%;
   }
   .popularTitle > h1 {
     font-size: 25px;
@@ -731,6 +823,10 @@ body {
 
   .featureCourseCard {
     display: block;
+    width: 100%;
+  }
+
+  .featureSelect {
     width: 100%;
   }
 
